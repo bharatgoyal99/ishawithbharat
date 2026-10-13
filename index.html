@@ -880,53 +880,82 @@
     }
   }
 
-  /* ============ SANGEET CELEBRATION ============ */
+  /* ============ SANGEET CELEBRATION — MATCH WEDDING CEREMONY ============ */
   #sangeet{
-    padding:64px 24px;
-    background:linear-gradient(155deg,#3a1025 0%,#59152f 52%,#2a0a1b 100%);
-    color:#f7e2b0;
+    background:linear-gradient(180deg, var(--cream) 0%, #f0e3c9 100%);
     text-align:center;
   }
   .sangeet-card{
-    max-width:420px;
+    max-width:360px;
     margin:0 auto;
-    padding:34px 22px 38px;
-    border:1px solid rgba(232,199,116,.55);
-    outline:1px solid rgba(232,199,116,.18);
-    outline-offset:6px;
-    background:rgba(22,5,15,.18);
-    box-shadow:0 18px 45px rgba(0,0,0,.18);
+    background:rgba(255,250,235,.7);
+    border:1px solid var(--gold);
+    padding:36px 28px;
+    position:relative;
+    box-shadow:0 15px 40px rgba(107,15,26,.15);
   }
-  .sangeet-kicker{
+  .sangeet-card::before{
+    content:"";
+    position:absolute;inset:6px;
+    border:0.5px solid rgba(201,161,74,.4);
+    pointer-events:none;
+  }
+  .sangeet-title{
+    font-family:'Allura',cursive;
+    font-size:46px;
+    color:var(--maroon);
+    margin-bottom:4px;
+    line-height:1;
+  }
+  .sangeet-sub{
+    font-family:'Marcellus',serif;
+    font-size:11px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:var(--gold-dark);
+    margin-bottom:24px;
+  }
+  .sangeet-date-row{
     font-family:'Cormorant Garamond',serif;
-    font-size:clamp(48px,12vw,66px);
+    color:var(--ink);
+    font-size:16px;
+    margin:10px 0;
+    letter-spacing:.3px;
+  }
+  .sangeet-date-row strong{
+    display:block;
+    font-family:'Cinzel',serif;
+    font-size:17px;
+    font-weight:500;
+    letter-spacing:2px;
+    color:var(--maroon);
+    margin-top:2px;
+  }
+  .sangeet-name{
+    font-family:'Allura',cursive;
+    font-size:44px;
+    color:var(--maroon);
+    line-height:1.1;
+    margin:14px 0 4px;
+  }
+  .sangeet-city{
+    font-family:'Cormorant Garamond',serif;
     font-style:italic;
-    line-height:1.05;
-    color:#f5d58c;
-    margin:0 0 24px;
-  }
-  .sangeet-date{
-    font-family:'Marcellus',serif;
-    font-size:clamp(18px,4.7vw,23px);
-    letter-spacing:.025em;
-    line-height:1.5;
-    color:#f8dfaa;
-    margin:0 auto 22px;
-  }
-  .sangeet-venue{
-    font-family:'Marcellus',serif;
-    font-size:clamp(15px,3.8vw,19px);
-    font-weight:600;
-    line-height:1.65;
-    color:#f8dfaa;
-    overflow-wrap:anywhere;
+    font-size:17px;
+    color:var(--gold-dark);
+    letter-spacing:1px;
   }
   .sangeet-note{
-    margin-top:18px;
+    margin-top:16px;
     font-family:'Cormorant Garamond',serif;
-    font-size:18px;
     font-style:italic;
-    color:rgba(255,239,205,.82);
+    font-size:16px;
+    color:var(--ink);
+  }
+  @media (max-width:380px){
+    .sangeet-title{font-size:42px}
+    .sangeet-name{font-size:38px}
+    .sangeet-card{padding:32px 22px}
   }
 
 </style>
