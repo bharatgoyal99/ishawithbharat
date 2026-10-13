@@ -879,6 +879,56 @@
       box-shadow:0 0 60px rgba(0,0,0,.15);
     }
   }
+
+  /* ============ SANGEET CELEBRATION ============ */
+  #sangeet{
+    padding:64px 24px;
+    background:linear-gradient(155deg,#3a1025 0%,#59152f 52%,#2a0a1b 100%);
+    color:#f7e2b0;
+    text-align:center;
+  }
+  .sangeet-card{
+    max-width:420px;
+    margin:0 auto;
+    padding:34px 22px 38px;
+    border:1px solid rgba(232,199,116,.55);
+    outline:1px solid rgba(232,199,116,.18);
+    outline-offset:6px;
+    background:rgba(22,5,15,.18);
+    box-shadow:0 18px 45px rgba(0,0,0,.18);
+  }
+  .sangeet-kicker{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(48px,12vw,66px);
+    font-style:italic;
+    line-height:1.05;
+    color:#f5d58c;
+    margin:0 0 24px;
+  }
+  .sangeet-date{
+    font-family:'Marcellus',serif;
+    font-size:clamp(18px,4.7vw,23px);
+    letter-spacing:.025em;
+    line-height:1.5;
+    color:#f8dfaa;
+    margin:0 auto 22px;
+  }
+  .sangeet-venue{
+    font-family:'Marcellus',serif;
+    font-size:clamp(15px,3.8vw,19px);
+    font-weight:600;
+    line-height:1.65;
+    color:#f8dfaa;
+    overflow-wrap:anywhere;
+  }
+  .sangeet-note{
+    margin-top:18px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:18px;
+    font-style:italic;
+    color:rgba(255,239,205,.82);
+  }
+
 </style>
 </head>
 <body>
@@ -979,6 +1029,27 @@
     </div>
   </section>
 
+
+  <!-- Sangeet -->
+  <section id="sangeet" aria-labelledby="sangeet-title">
+    <div class="sangeet-card reveal-on-scroll">
+      <div class="ornament" style="margin:0 auto 20px">
+        <span class="line" style="background:linear-gradient(90deg,transparent,#e8c774,transparent)"></span>
+        <span class="dot" style="color:#e8c774">✦</span>
+        <span class="line" style="background:linear-gradient(90deg,transparent,#e8c774,transparent)"></span>
+      </div>
+      <h2 class="sangeet-kicker" id="sangeet-title">Sangeet</h2>
+      <p class="sangeet-date">MONDAY, 23<sup style="font-size:.55em">RD</sup> NOVEMBER 2026<br>7:00 PM</p>
+      <div class="ornament" style="margin:0 auto 18px">
+        <span class="line" style="background:linear-gradient(90deg,transparent,#e8c774,transparent)"></span>
+        <span class="dot" style="color:#e8c774">❖</span>
+        <span class="line" style="background:linear-gradient(90deg,transparent,#e8c774,transparent)"></span>
+      </div>
+      <p class="sangeet-venue">HOTEL A9<br>HANDIAYA ROAD, BARNALA</p>
+      <p class="sangeet-note">An evening of music, dance &amp; celebration</p>
+    </div>
+  </section>
+
   <!-- Venue -->
   <section id="venue">
     <div class="venue-card reveal-on-scroll">
@@ -1018,7 +1089,7 @@
       <span class="line" style="background:linear-gradient(90deg,transparent,var(--gold-light),transparent)"></span>
     </div>
     <p class="footer-line">With compliments from</p>
-    <p class="family-name">Bansal Family</p>
+    <p class="family-name">Goyal Family</p>
     <div class="heart">✦ ❖ ✦</div>
     <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;color:rgba(246,236,217,.6);margin-top:6px">
       Your presence will make our day complete
